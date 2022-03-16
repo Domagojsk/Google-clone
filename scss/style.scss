@@ -2,3 +2,23 @@
 @import './config';
 @import './mixins';
 @import './buttons';
+
+/*  Header style */
+
+header {
+  height: 3.75rem;
+
+  .navmenu {
+    height: 100%;
+    width: 100%;
+    padding: 15px 20px;
+  }
+  ul {
+    @include flex(flex-end, center, row);
+    font-size: 14px;
+    line-height: 24px;
+  }
+  li {
+    padding-left: 15px;
+  }
+}
