@@ -48,10 +48,11 @@ nav {
 main {
   @include flex(center, center, row);
   flex-grow: 1;
+  padding-bottom: 50px;
 
   .logo-animated {
-    width: 360px;
-    margin-bottom: 20px;
+    width: 340px;
+    margin-bottom: 18px;
   }
 
   .content-section {
@@ -77,6 +78,10 @@ main {
     box-shadow: 0 2px 0 $bborder-color;
   }
 
+  .btns {
+    margin-bottom: 10px;
+  }
+
   input {
     border: none;
     outline: none;
@@ -91,14 +96,96 @@ main {
   }
 
   i {
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     margin-right: 15px;
-    color: $primary-color;
+    color: $icon-color;
+    font-weight: 200;
+  }
+
+  .fa-keyboard {
+    color: $footerlinks-color;
+  }
+
+  svg {
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 15px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .help-ukraine {
+    margin-bottom: 32px;
   }
 
   .activity {
     font-size: 13px;
-    color: $link-color;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+      color: $link-color;
+    }
+  }
+
+  .g-language {
+    display: inline-block;
+    font-size: 13px;
+    color: $primary-color;
+    padding: 0 3px;
+  }
+}
+
+/* Footer */
+
+footer {
+  color: $footer-color;
+  height: 94px;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .upper-footer {
+    @include border;
+    height: 50%;
+    padding: 15px 30px;
+  }
+
+  p {
+    font-size: 15px;
+    color: $footerlinks-color;
+    font-weight: 500;
+  }
+
+  .lower-footer {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  a {
+    font-size: 14px;
+    color: $footerlinks-color;
+    padding: 15px;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .lower-left {
+    display: flex;
+  }
+
+  .lower-right {
+    display: flex;
   }
 }

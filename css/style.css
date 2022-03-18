@@ -15,6 +15,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100vh;
+  font-family: arial, sans-serif;
 }
 
 a {
@@ -123,11 +124,12 @@ main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  padding-bottom: 50px;
 }
 
 main .logo-animated {
-  width: 360px;
-  margin-bottom: 20px;
+  width: 340px;
+  margin-bottom: 18px;
 }
 
 main .content-section {
@@ -171,6 +173,10 @@ main .search-bar:hover {
           box-shadow: 0 2px 0 #dadce0;
 }
 
+main .btns {
+  margin-bottom: 10px;
+}
+
 main input {
   border: none;
   outline: none;
@@ -187,14 +193,107 @@ main input:focus {
 }
 
 main i {
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
   margin-right: 15px;
-  color: #3c4043;
+  color: #9aa0a6;
+  font-weight: 200;
+}
+
+main .fa-keyboard {
+  color: #70757a;
+}
+
+main svg {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+main svg:hover {
+  cursor: pointer;
+}
+
+main .help-ukraine {
+  margin-bottom: 32px;
 }
 
 main .activity {
   font-size: 13px;
+  font-weight: 500;
+}
+
+main .activity:hover {
+  text-decoration: underline;
   color: #1a0dab;
+}
+
+main .g-language {
+  display: inline-block;
+  font-size: 13px;
+  color: #3c4043;
+  padding: 0 3px;
+}
+
+/* Footer */
+footer {
+  color: #f2f2f2;
+  height: 94px;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .upper-footer {
+  border: 1px solid #dadce0;
+  height: 50%;
+  padding: 15px 30px;
+}
+
+footer p {
+  font-size: 15px;
+  color: #70757a;
+  font-weight: 500;
+}
+
+footer .lower-footer {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+
+footer a {
+  font-size: 14px;
+  color: #70757a;
+  padding: 15px;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .lower-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .lower-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
