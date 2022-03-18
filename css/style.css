@@ -238,7 +238,7 @@ main .g-language {
 
 /* Footer */
 footer {
-  color: #f2f2f2;
+  background-color: #f2f2f2;
   height: 94px;
 }
 
@@ -252,7 +252,7 @@ footer .container {
 }
 
 footer .upper-footer {
-  border: 1px solid #dadce0;
+  border-bottom: 1px solid #dadce0;
   height: 50%;
   padding: 15px 30px;
 }
