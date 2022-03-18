@@ -4,7 +4,6 @@
 @import './buttons';
 
 /*  Header style */
-
 nav {
   @include flex(flex-end, center, row);
   height: 60px;
@@ -15,9 +14,8 @@ nav {
     font-size: 13px;
     cursor: pointer;
     padding: 5px 7px;
-    color: black;
+    color: $ulink-color;
     line-height: 24px;
-    font-family: 'Roboto', sans-serif;
   }
 
   .navlink-slike {
@@ -71,6 +69,11 @@ main {
     padding-left: 15px;
     box-shadow: 0 1px 0 $bborder-color;
     margin-bottom: 20px;
+
+    @media screen and(max-width: 767px) {
+      width: 85%;
+      height: 35px;
+    }
   }
 
   .search-bar:hover {
@@ -89,6 +92,9 @@ main {
     height: 30px;
     flex-grow: 1;
     color: $primary-color;
+    @media screen and(max-width: 767px) {
+      width: 25px;
+    }
   }
 
   input:focus {
@@ -101,6 +107,11 @@ main {
     margin-right: 15px;
     color: $icon-color;
     font-weight: 200;
+
+    @media screen and(max-width: 767px) {
+      margin-right: 5px;
+      font-size: 14px;
+    }
   }
 
   .fa-keyboard {
@@ -145,6 +156,9 @@ main {
 footer {
   background-color: $footer-color;
   height: 94px;
+  @media screen and(max-width: 767px) {
+    height: 138px;
+  }
 
   .container {
     display: flex;
@@ -155,6 +169,10 @@ footer {
     @include border;
     height: 50%;
     padding: 15px 30px;
+
+    @media screen and(max-width: 767px) {
+      height: 30%;
+    }
   }
 
   p {
@@ -168,6 +186,12 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
+
+    @media screen and(max-width: 767px) {
+      height: 70%;
+      flex-direction: column;
+      padding: 0 10px;
+    }
   }
 
   a {
@@ -176,6 +200,10 @@ footer {
     padding: 15px;
     font-weight: 500;
 
+    @media screen and(max-width: 767px) {
+      padding: 10px;
+    }
+
     &:hover {
       text-decoration: underline;
     }
@@ -183,9 +211,37 @@ footer {
 
   .lower-left {
     display: flex;
+
+    @media screen and(max-width: 767px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+  .grid1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .grid2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .grid3 {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .grid4 {
+    grid-area: 2 / 1 / 3/ 4;
+    @media screen and(max-width: 767px) {
+      margin-top: 7px;
+    }
+  }
+
+  li {
+    text-align: center;
   }
 
   .lower-right {
     display: flex;
+    @media screen and(max-width: 767px) {
+      height: 30px;
+    }
   }
 }
